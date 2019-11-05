@@ -1,0 +1,20 @@
+.showcase {
+	background-color: #111111;
+	/* background-image: url('oaths.jpeg'); */
+	/* padding-top: 10vh; */
+	width: 100vw;
+	/* height: 90vh; */
+}
+
+.banner {
+	width: 100vw;
+	height: 100vh;
+}
+
+@media screen and (max-width: 991px) {
+	.banner {
+		width: 100vw;
+		height: 45vh;
+		margin-top: 1em;
+	}
+}
