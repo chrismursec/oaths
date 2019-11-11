@@ -1,39 +1,21 @@
-/* .TopNav {
-	background-color: #111111;
-	height: 4em;
-	width: 100vw;
-	padding-top: 3%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-} */
-/* .brand {
-	color: white;
-} */
-
 .TopNav {
 	height: 10vh;
+	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	background: #111111;
-	position: fixed; /* Set the navbar to fixed position */
-	width: 100%;
+	position: fixed;
 }
 .brand {
 	font-size: 32px;
-	color: #beddef;
 }
 
-a {
-	color: white;
+.navLink {
+	color: #fff;
 	text-decoration: none;
 	padding: 24px;
-}
-
-a[id='tour']:target ~ #main article.panel {
-	-webkit-transform: translateY(0px);
-	transform: translateY(0px);
+	font-family: 'Anton', sans-serif;
 }
 
 .logo {

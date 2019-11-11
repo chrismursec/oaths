@@ -10,34 +10,25 @@
 	align-content: center;
 }
 
+.title {
+	font-family: 'Anton', sans-serif;
+}
+
 .youtube {
 	width: 80%;
 	height: 90%;
 	align-self: center;
-	margin-bottom: 2em;
 }
 
 .spotify {
 	width: 80%;
-	height: 80%;
-	align-self: center;
-}
-/* .spotifyPlayer {
-	width: 90%;
 	height: 90%;
+	align-self: center;
+	margin-bottom: 2em;
 }
 
-.embeddedvideo {
-	margin-top: 2em;
-	margin-bottom: 2em;
-	width: 90%;
-	height: 90%;
-}
-*/
 @media screen and (max-width: 991px) {
-	.youtube {
-		width: 100%;
-	}
+	.youtube,
 	.spotify {
 		width: 100%;
 	}

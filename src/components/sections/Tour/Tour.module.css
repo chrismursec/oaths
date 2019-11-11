@@ -7,7 +7,9 @@
 	align-content: center;
 	text-align: center;
 }
-
+.title {
+	font-family: 'Anton', sans-serif;
+}
 .tourdates {
 	align-self: center;
 	display: flex;

@@ -6,7 +6,9 @@ import {
 	faFacebookSquare,
 	faInstagram,
 	faYoutube,
-	faSpotify
+	faSpotify,
+	faGooglePlay,
+	faApple
 } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
 	return (
@@ -50,6 +52,22 @@ const Footer = () => {
 				rel="noopener noreferrer"
 			>
 				<FontAwesomeIcon icon={faSpotify} />
+			</a>
+			<a
+				href="https://play.google.com/store/music/artist/%C3%98ATHS?id=Astyll66m33etnqlsnakzksgaai&hl=en"
+				className={styles.fontawesomeicon}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<FontAwesomeIcon icon={faGooglePlay} />
+			</a>
+			<a
+				href="https://music.apple.com/gb/artist/oaths/839068357"
+				className={styles.fontawesomeicon}
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<FontAwesomeIcon icon={faApple} />
 			</a>
 		</footer>
 	);

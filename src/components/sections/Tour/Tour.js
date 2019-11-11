@@ -36,7 +36,7 @@ const Tour = props => {
 
 	return (
 		<div id="tour" className={styles.tour}>
-			<h1>Tour Dates</h1>
+			<h1 className={styles.title}>TOUR DATES</h1>
 			<div className={styles.tourdates}>{dates}</div>
 		</div>
 	);
