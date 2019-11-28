@@ -1,38 +1,32 @@
-.music {
-	text-align: center;
+.merch {
 	background-color: #111111;
-	height: 100vh;
+
 	color: white;
-	padding-top: 10vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	align-content: center;
 }
-
 .title {
 	font-family: 'Anton', sans-serif;
 }
-
-.youtube {
-	width: 80%;
-	height: 90%;
-	align-self: center;
+.merchItemImage {
+	height: 200px;
+	width: 200px;
 }
 
-.spotify {
+.merchList {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 	width: 80%;
-	height: 90%;
 	align-self: center;
-	margin-bottom: 2em;
 }
-
 @media screen and (max-width: 991px) {
-	.music {
+	.merch {
 		height: auto;
 	}
-	.youtube,
-	.spotify {
-		width: 100%;
+	.merchList {
+		flex-direction: column;
 	}
 }
