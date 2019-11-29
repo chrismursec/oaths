@@ -6,14 +6,14 @@ const Music = () => {
 		<div id="music" className={styles.music}>
 			<h1 className={styles.title}>MUSIC</h1>
 
-			<iframe
+			{/* <iframe
 				className={styles.spotify}
 				src="https://open.spotify.com/embed/artist/5ECmcgWxIJ16yXrZ9ZoHe7"
 				frameborder="0"
 				allowtransparency="true"
 				allow="encrypted-media"
 				title="oaths"
-			></iframe>
+			></iframe> */}
 
 			<iframe
 				className={styles.youtube}
