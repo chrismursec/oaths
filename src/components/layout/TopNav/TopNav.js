@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './TopNav.module.css';
 import logo from './oaths_logo_white.png';
-const TopNav = props => {
+const TopNav = () => {
 	return (
 		<nav>
 			<div className={styles.TopNav}>

@@ -1,8 +1,7 @@
 .tour {
-	height: 100vh;
+	height: auto;
 	background-color: #111111;
 	color: #fff;
-	padding-top: 2em;
 	padding-top: 10vh;
 	align-content: center;
 	text-align: center;
@@ -16,12 +15,56 @@
 	flex-direction: column;
 }
 
-.tourdate {
+.tourDateContainer {
 	width: 80vw;
 	align-self: center;
 }
+
+.tourdate {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 16px 10px;
+}
+
+.tourDateText {
+	margin-top: 1px;
+	margin-bottom: 1px;
+	font-weight: bold;
+}
+.city {
+	color: grey;
+}
+.tourButtons {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+.eventButton {
+	margin-bottom: 5px;
+	background-color: grey;
+	color: white;
+	font-weight: bold;
+	border: none;
+	line-height: 34px;
+	width: 150px;
+	text-decoration: none;
+}
+
+.tourDateInfo {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+
 @media screen and (max-width: 991px) {
 	.tour {
 		height: auto;
+	}
+	.eventButton {
+		line-height: 22px;
+
+		width: 75px;
 	}
 }

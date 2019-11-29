@@ -1,11 +1,11 @@
 .merch {
 	background-color: #111111;
-
 	color: white;
 	height: 100vh;
+	padding-top: 10vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 .title {
 	font-family: 'Anton', sans-serif;
@@ -22,9 +22,25 @@
 	width: 80%;
 	align-self: center;
 }
+.merchContainer {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.merchLink {
+	color: #fff;
+	text-decoration: none;
+	font-size: medium;
+}
+
 @media screen and (max-width: 991px) {
 	.merch {
 		height: auto;
+		margin-bottom: 4em;
+	}
+	.merchContainer {
+		padding-bottom: 1em;
 	}
 	.merchList {
 		flex-direction: column;

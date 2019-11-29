@@ -11,66 +11,59 @@ import {
 	faApple
 } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
-	return (
-		<footer className={styles.footer}>
+	const footerItems = [
+		{
+			name: 'Twitter',
+			url: 'https://twitter.com/Oathsuk',
+			icon: faTwitter
+		},
+		{
+			name: 'Instagram',
+			url: 'https://www.instagram.com/oaths_uk/',
+			icon: faInstagram
+		},
+		{
+			name: 'Facebook',
+			url: 'https://www.facebook.com/OathsUK/',
+			icon: faFacebookSquare
+		},
+
+		{
+			name: 'Youtube',
+			url: 'https://www.youtube.com/user/OathsOfficial',
+			icon: faYoutube
+		},
+		{
+			name: 'Spotify',
+			url: 'https://open.spotify.com/artist/5ECmcgWxIJ16yXrZ9ZoHe7',
+			icon: faSpotify
+		},
+		{
+			name: 'Apple Music',
+			url: 'https://music.apple.com/gb/artist/oaths/839068357',
+			icon: faApple
+		},
+		{
+			name: 'Google Play',
+			url:
+				'https://play.google.com/store/music/artist/%C3%98ATHS?id=Astyll66m33etnqlsnakzksgaai&hl=en',
+			icon: faGooglePlay
+		}
+	];
+	let icons = footerItems.map(footerItem => {
+		return (
 			<a
-				href="https://www.facebook.com/OathsUK/"
+				href={footerItem.url}
 				className={styles.fontawesomeicon}
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<FontAwesomeIcon icon={faFacebookSquare} />
+				<FontAwesomeIcon icon={footerItem.icon} />
 			</a>
-			<a
-				href="https://twitter.com/Oathsuk"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faTwitter} />
-			</a>
-			<a
-				href="https://www.instagram.com/oaths_uk/"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faInstagram} />
-			</a>
-			<a
-				href="https://www.youtube.com/user/OathsOfficial"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faYoutube} />
-			</a>
-			<a
-				href="https://open.spotify.com/artist/5ECmcgWxIJ16yXrZ9ZoHe7"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faSpotify} />
-			</a>
-			<a
-				href="https://play.google.com/store/music/artist/%C3%98ATHS?id=Astyll66m33etnqlsnakzksgaai&hl=en"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faGooglePlay} />
-			</a>
-			<a
-				href="https://music.apple.com/gb/artist/oaths/839068357"
-				className={styles.fontawesomeicon}
-				target="_blank"
-				rel="noopener noreferrer"
-			>
-				<FontAwesomeIcon icon={faApple} />
-			</a>
-		</footer>
-	);
+		);
+	});
+
+	return <footer className={styles.footer}>{icons}</footer>;
 };
 
 export default Footer;

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Showcase.module.css';
-// import banner from './0.jpg';
-import banner from './oaths.jpeg';
+import banner from './0b.jpg';
+// import banner from './oaths.jpeg';
 
-const Showcase = props => {
+const Showcase = () => {
 	return (
 		<div className={styles.showcase} id="/">
 			<img

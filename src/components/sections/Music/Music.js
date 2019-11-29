@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Music.module.css';
 
-const Music = props => {
+const Music = () => {
 	return (
 		<div id="music" className={styles.music}>
 			<h1 className={styles.title}>MUSIC</h1>

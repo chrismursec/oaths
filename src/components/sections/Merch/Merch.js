@@ -3,7 +3,7 @@ import styles from './Merch.module.css';
 
 class Merch extends Component {
 	state = {
-		bigCartelURl: 'https://oaths.bigcartel.com/',
+		bigCartelURL: 'https://oaths.bigcartel.com/',
 		merchData: []
 	};
 
@@ -16,13 +16,32 @@ class Merch extends Component {
 	render() {
 		const merch = this.state.merchData.map(merchItem => {
 			return (
-				<div>
-					<img
-						alt={merchItem.description}
-						className={styles.merchItemImage}
-						src={merchItem.images[0].secure_url}
-					/>
-					<p>{merchItem.name}</p>
+				<div className={styles.merchContainer}>
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href={`${this.state.bigCartelURl}${merchItem.url}`}
+						className={styles.merchLink}
+					>
+						<img
+							alt={merchItem.description}
+							className={styles.merchItemImage}
+							src={merchItem.images[0].secure_url}
+						/>
+					</a>
+					<a
+						target="_blank"
+						rel="noopener noreferrer"
+						href={`${this.state.bigCartelURL}${merchItem.url}`}
+						className={styles.merchLink}
+					>
+						<p>{merchItem.name}</p>
+						<p>
+							{merchItem.status === 'sold-out'
+								? 'Sold Out'
+								: 'In Stock'}
+						</p>
+					</a>
 				</div>
 			);
 		});

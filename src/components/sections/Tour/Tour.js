@@ -1,45 +1,74 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styles from './Tour.module.css';
 
-const Tour = props => {
-	let fakeData = [
-		{
-			id: 1,
-			city: 'Manchester',
-			venue: 'Manchester Arena',
-			date: '05/11/2019'
-		},
-		{
-			id: 2,
-			city: 'Manchester',
-			venue: 'Manchester Arena',
-			date: '05/11/2019'
-		},
-		{
-			id: 3,
-			city: 'Manchester',
-			venue: 'Manchester Arena',
-			date: '05/11/2019'
-		}
-	];
+class Tour extends Component {
+	state = {
+		dummyData: [
+			{
+				id: 1,
+				city: 'Manchester',
+				venue: 'Manchester Arena',
+				date: 'Thursday, November 28'
+			},
+			{
+				id: 2,
+				city: 'Manchester',
+				venue: 'Manchester Arena',
+				date: 'Friday, November 29'
+			},
+			{
+				id: 3,
+				city: 'Manchester',
+				venue: 'Manchester Arena',
+				date: 'Saturday, November 30'
+			}
+		]
+	};
 
-	const dates = fakeData.map(date => {
+	render() {
+		const dates = this.state.dummyData.map(date => {
+			return (
+				<div className={styles.tourDateContainer}>
+					<div key={date.id} className={styles.tourdate}>
+						<div className={styles.tourDateInfo}>
+							<p
+								className={`${styles.tourDateText} ${styles.date}`}
+							>
+								{date.date}
+							</p>
+
+							<p
+								className={`${styles.tourDateText} ${styles.city}`}
+							>
+								{date.city}
+							</p>
+							<p
+								className={`${styles.tourDateText} ${styles.venue}`}
+							>
+								{date.venue}
+							</p>
+						</div>
+						<div className={styles.tourButtons}>
+							<a href="lol" className={styles.eventButton}>
+								On Sale
+							</a>
+							<a href="lol" className={styles.eventButton}>
+								RSVP
+							</a>
+						</div>
+					</div>
+
+					<hr />
+				</div>
+			);
+		});
 		return (
-			<div key={date.id} className={styles.tourdate}>
-				<h4>{date.city}</h4>
-				<h4>{date.venue}</h4>
-				<h4>{date.date}</h4>
-				<hr></hr>
+			<div id="tour" className={styles.tour}>
+				<h1 className={styles.title}>TOUR DATES</h1>
+				<div className={styles.tourdates}>{dates}</div>
 			</div>
 		);
-	});
-
-	return (
-		<div id="tour" className={styles.tour}>
-			<h1 className={styles.title}>TOUR DATES</h1>
-			<div className={styles.tourdates}>{dates}</div>
-		</div>
-	);
-};
+	}
+}
 
 export default Tour;
