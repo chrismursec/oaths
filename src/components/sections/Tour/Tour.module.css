@@ -33,22 +33,37 @@
 	font-weight: bold;
 }
 .city {
-	color: grey;
+	color: #535c68;
+}
+hr {
+	border-color: #535c68;
 }
 .tourButtons {
 	display: flex;
 	flex-direction: column;
 	align-self: center;
 }
+
 .eventButton {
 	margin-bottom: 5px;
-	background-color: grey;
+	background-color: #535c68;
 	color: white;
 	font-weight: bold;
 	border: none;
 	line-height: 34px;
 	width: 150px;
 	text-decoration: none;
+}
+
+.rsvpButton {
+	background-color: #111;
+	border: 1px solid #535c68;
+}
+.rsvpButton:hover {
+	background-color: #535c68;
+}
+.saleButton:hover {
+	background-color: #95afc0;
 }
 
 .tourDateInfo {

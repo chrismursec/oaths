@@ -49,10 +49,16 @@ class Tour extends Component {
 							</p>
 						</div>
 						<div className={styles.tourButtons}>
-							<a href="lol" className={styles.eventButton}>
+							<a
+								href="lol"
+								className={`${styles.eventButton} ${styles.saleButton}`}
+							>
 								On Sale
 							</a>
-							<a href="lol" className={styles.eventButton}>
+							<a
+								href="lol"
+								className={`${styles.eventButton} ${styles.rsvpButton}`}
+							>
 								RSVP
 							</a>
 						</div>
