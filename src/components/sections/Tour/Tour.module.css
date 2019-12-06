@@ -9,7 +9,8 @@
 .title {
 	font-family: 'Anton', sans-serif;
 }
-.tourdates {
+
+/* .tourdates {
 	align-self: center;
 	display: flex;
 	flex-direction: column;
@@ -71,15 +72,10 @@ hr {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: center;
-}
+} */
 
 @media screen and (max-width: 991px) {
 	.tour {
 		height: auto;
-	}
-	.eventButton {
-		line-height: 22px;
-
-		width: 75px;
 	}
 }
