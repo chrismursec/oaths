@@ -21,6 +21,7 @@
 	justify-content: space-between;
 	width: 80%;
 	align-self: center;
+	flex-wrap: wrap;
 }
 .merchContainer {
 	display: flex;

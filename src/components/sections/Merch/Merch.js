@@ -20,7 +20,7 @@ class Merch extends Component {
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href={`${this.state.bigCartelURl}${merchItem.url}`}
+						href={`${this.state.bigCartelURL}${merchItem.url}`}
 						className={styles.merchLink}
 					>
 						<img
