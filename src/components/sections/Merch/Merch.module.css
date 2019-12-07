@@ -46,4 +46,8 @@
 	.merchList {
 		flex-direction: column;
 	}
+	.merchItemImage {
+		width: 80vw;
+		height: auto;
+	}
 }
