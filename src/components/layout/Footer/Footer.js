@@ -53,6 +53,7 @@ const Footer = () => {
 	let icons = footerItems.map(footerItem => {
 		return (
 			<a
+				key={footerItem.name}
 				href={footerItem.url}
 				className={styles.fontawesomeicon}
 				target="_blank"
