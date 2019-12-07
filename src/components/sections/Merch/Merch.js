@@ -36,12 +36,12 @@ class Merch extends Component {
 						className={styles.merchLink}
 					>
 						<p>{merchItem.name}</p>
-						<p>
-							{merchItem.status === 'sold-out'
-								? 'Sold Out'
-								: 'In Stock'}
-						</p>
 					</a>
+					<p>
+						{merchItem.status === 'sold-out'
+							? 'Sold Out'
+							: 'In Stock'}
+					</p>
 				</div>
 			);
 		});

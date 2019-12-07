@@ -7,9 +7,6 @@
 	flex-direction: column;
 	justify-content: flex-start;
 }
-.title {
-	font-family: 'Anton', sans-serif;
-}
 .merchItemImage {
 	height: 200px;
 	width: 200px;
@@ -31,6 +28,7 @@
 
 .merchLink {
 	color: #fff;
+	font-family: 'Alata', sans-serif;
 	text-decoration: none;
 	font-size: medium;
 }
@@ -38,7 +36,6 @@
 @media screen and (max-width: 991px) {
 	.merch {
 		height: auto;
-		margin-bottom: 4em;
 	}
 	.merchContainer {
 		padding-bottom: 1em;

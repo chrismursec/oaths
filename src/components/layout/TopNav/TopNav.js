@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './TopNav.module.css';
-import logo from './oaths_logo_white.png';
+import logo from './oaths_logo_white.webp';
 const TopNav = () => {
 	return (
 		<nav>

@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Showcase.module.css';
-import banner from './vapeb.jpg';
-// import banner from './oaths.jpeg';
+import banner from './banner-image.webp';
 
 const Showcase = () => {
 	return (
