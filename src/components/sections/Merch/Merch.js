@@ -16,7 +16,7 @@ class Merch extends Component {
 	render() {
 		const merch = this.state.merchData.map(merchItem => {
 			return (
-				<div className={styles.merchContainer}>
+				<div className={styles.merchContainer} key={merchItem.id}>
 					<a
 						target="_blank"
 						rel="noopener noreferrer"

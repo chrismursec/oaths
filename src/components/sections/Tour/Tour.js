@@ -8,8 +8,8 @@ const Tour = () => {
 
 			<div className={styles.container}>
 				<div
-					className={styles.bandsintownwidget}
-					class="bit-widget-initializer"
+					rel="noopener"
+					className={`${styles.bandsintownwidget} bit-widget-initializer`}
 					data-artist-name="oaths"
 					data-display-local-dates="false"
 					data-display-past-dates="true"

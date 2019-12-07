@@ -19,9 +19,9 @@ const Music = () => {
 				className={styles.youtube}
 				title="oathsvideo"
 				src="https://www.youtube.com/embed/wdOJEqmgRYE"
-				frameborder="0"
+				frameBorder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-				allowfullscreen
+				allowFullScreen
 			></iframe>
 		</div>
 	);
