@@ -48,7 +48,7 @@ class Merch extends Component {
 
 		return (
 			<div id="merch" className={styles.merch}>
-				<h1 className={styles.title}>Merch</h1>
+				<h1 className="title">Merch</h1>
 
 				<div className={styles.merchList}>{merch}</div>
 			</div>

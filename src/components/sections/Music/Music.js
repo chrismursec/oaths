@@ -4,7 +4,7 @@ import styles from './Music.module.css';
 const Music = () => {
 	return (
 		<div id="music" className={styles.music}>
-			<h1 className={styles.title}>MUSIC</h1>
+			<h1 className="title">MUSIC</h1>
 
 			{/* <iframe
 				className={styles.spotify}

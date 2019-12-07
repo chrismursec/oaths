@@ -6,74 +6,14 @@
 	align-content: center;
 	text-align: center;
 }
-.title {
-	font-family: 'Anton', sans-serif;
-}
 
-/* .tourdates {
-	align-self: center;
-	display: flex;
-	flex-direction: column;
+.container {
+	padding-left: 10%;
+	padding-right: 10%;
 }
-
-.tourDateContainer {
-	width: 80vw;
-	align-self: center;
+.bandsintownwidget {
+	align-content: center;
 }
-
-.tourdate {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	padding: 16px 10px;
-}
-
-.tourDateText {
-	margin-top: 1px;
-	margin-bottom: 1px;
-	font-weight: bold;
-}
-.city {
-	color: #535c68;
-}
-hr {
-	border-color: #535c68;
-}
-.tourButtons {
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-}
-
-.eventButton {
-	margin-bottom: 5px;
-	background-color: #535c68;
-	color: white;
-	font-weight: bold;
-	border: none;
-	line-height: 34px;
-	width: 150px;
-	text-decoration: none;
-}
-
-.rsvpButton {
-	background-color: #111;
-	border: 1px solid #535c68;
-}
-.rsvpButton:hover {
-	background-color: #535c68;
-}
-.saleButton:hover {
-	background-color: #95afc0;
-}
-
-.tourDateInfo {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-} */
-
 @media screen and (max-width: 991px) {
 	.tour {
 		height: auto;
