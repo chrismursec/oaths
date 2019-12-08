@@ -17,6 +17,9 @@
 	padding: 24px;
 	font-family: 'Alata', sans-serif;
 }
+.navLink:hover {
+	color: #535c68;
+}
 
 .logo {
 	height: 1.5em;

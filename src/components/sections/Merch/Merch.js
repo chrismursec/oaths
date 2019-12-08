@@ -47,7 +47,7 @@ class Merch extends Component {
 		});
 
 		return (
-			<div id="merch" className={styles.merch}>
+			<div id="merch" className={`${styles.merch} section`}>
 				<h1 className="title">Merch</h1>
 
 				<div className={styles.merchList}>{merch}</div>

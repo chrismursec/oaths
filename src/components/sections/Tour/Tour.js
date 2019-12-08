@@ -3,7 +3,7 @@ import styles from './Tour.module.css';
 
 const Tour = () => {
 	return (
-		<div id="tour" className={styles.tour}>
+		<div id="tour" className={`${styles.tour} section`}>
 			<h1 className="title">TOUR DATES</h1>
 
 			<div className={styles.container}>

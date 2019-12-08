@@ -1,12 +1,6 @@
 .tour {
-	height: auto;
-	background-color: #111111;
-	color: #fff;
-	padding-top: 10vh;
-	align-content: center;
-	text-align: center;
+	height: auto !important;
 }
-
 .container {
 	padding-left: 10%;
 	padding-right: 10%;
@@ -15,9 +9,6 @@
 	align-content: center;
 }
 @media screen and (max-width: 991px) {
-	.tour {
-		height: auto;
-	}
 	.container {
 		padding-left: 0%;
 		padding-right: 0%;

@@ -1,11 +1,4 @@
 .merch {
-	background-color: #111111;
-	color: white;
-	height: 100vh;
-	padding-top: 10vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
 }
 .merchItemImage {
 	height: 200px;
@@ -36,15 +29,18 @@
 @media screen and (max-width: 991px) {
 	.merch {
 		height: auto;
+		margin-bottom: 4em;
 	}
 	.merchContainer {
 		padding-bottom: 1em;
 	}
-	.merchList {
-		flex-direction: column;
-	}
+}
+@media screen and (max-width: 600px) {
 	.merchItemImage {
 		width: 80vw;
 		height: auto;
+	}
+	.merchList {
+		flex-direction: column;
 	}
 }

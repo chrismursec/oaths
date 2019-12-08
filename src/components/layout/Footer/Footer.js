@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import {
 	faTwitter,
 	faFacebookSquare,
@@ -48,6 +49,11 @@ const Footer = () => {
 			url:
 				'https://play.google.com/store/music/artist/%C3%98ATHS?id=Astyll66m33etnqlsnakzksgaai&hl=en',
 			icon: faGooglePlay
+		},
+		{
+			name: 'Email',
+			url: 'mailto:oathsuk@gmail.com',
+			icon: faEnvelope
 		}
 	];
 	let icons = footerItems.map(footerItem => {

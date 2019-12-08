@@ -9,8 +9,9 @@ const TopNav = () => {
 					<a className={styles.navLink} href="#music">
 						MUSIC
 					</a>
-					<a className={styles.navLink} href="#tour">
-						TOUR
+
+					<a className={styles.navLink} href="#videos">
+						VIDEOS
 					</a>
 				</span>
 				<span>
@@ -19,11 +20,11 @@ const TopNav = () => {
 					</a>
 				</span>
 				<span>
+					<a className={styles.navLink} href="#tour">
+						TOUR
+					</a>
 					<a className={styles.navLink} href="#merch">
 						MERCH
-					</a>
-					<a className={styles.navLink} href="#contact">
-						CONTACT
 					</a>
 				</span>
 			</div>

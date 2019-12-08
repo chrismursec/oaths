@@ -10,3 +10,14 @@ html {
 	font-family: 'Alata', sans-serif;
 	font-size: 2em;
 }
+.section {
+	background-color: #111;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: center;
+	text-align: center;
+	height: 100vh;
+	padding-top: 10vh;
+}
