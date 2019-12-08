@@ -6,12 +6,11 @@ const TopNav = () => {
 		<nav>
 			<div className={styles.TopNav}>
 				<span>
-					<a className={styles.navLink} href="#music">
-						MUSIC
-					</a>
-
 					<a className={styles.navLink} href="#videos">
 						VIDEOS
+					</a>
+					<a className={styles.navLink} href="#music">
+						MUSIC
 					</a>
 				</span>
 				<span>

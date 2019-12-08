@@ -15,8 +15,8 @@ function App() {
 			<Showcase></Showcase>
 
 			<div className="sections">
-				<Music></Music>
 				<Video></Video>
+				<Music></Music>
 				<Tour></Tour>
 				<Merch></Merch>
 			</div>
