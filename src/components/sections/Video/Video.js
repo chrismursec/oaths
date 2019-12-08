@@ -8,7 +8,7 @@ const Video = () => {
 			<iframe
 				className={styles.youtube}
 				title="oathsvideo"
-				src="https://www.youtube.com/embed/wdOJEqmgRYE"
+				src="https://www.youtube.com/embed/_7ikHZFjTK0"
 				frameBorder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
 				allowFullScreen
