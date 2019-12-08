@@ -23,6 +23,7 @@ const Tour = () => {
 					data-display-lineup="false"
 					data-display-play-my-city="true"
 					data-separator-color="rgba(124,124,124,0.25)"
+					data-font="Alata"
 				></div>
 			</div>
 		</div>
