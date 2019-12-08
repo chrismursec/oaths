@@ -13,7 +13,6 @@ function App() {
 		<div className="App">
 			<TopNav></TopNav>
 			<Showcase></Showcase>
-
 			<div className="sections">
 				<Video></Video>
 				<Music></Music>
