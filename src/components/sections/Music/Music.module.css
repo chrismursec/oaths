@@ -12,8 +12,10 @@
 	.music {
 		/* height: auto; */
 		padding-top: 0vh;
+		height: 50vh;
 	}
 	.spotify {
-		width: 100%;
+		width: 95%;
+		height: 40vh;
 	}
 }
