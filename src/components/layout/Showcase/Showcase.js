@@ -1,17 +1,38 @@
 import React from 'react';
 import styles from './Showcase.module.css';
-import banner from './banner-image.webp';
+import desktopBanner from './teasergif.gif';
+import mobileBanner from './banner-image.webp';
+import withSizes from 'react-sizes';
 
-const Showcase = () => {
-	return (
-		<div className={styles.showcase} id="/">
+const Showcase = ({ isMobile }) => {
+	const desktopShowcase = () => {
+		return (
 			<img
 				alt="full band shot"
 				className={styles.banner}
-				src={banner}
+				src={desktopBanner}
 			></img>
+		);
+	};
+
+	const mobileShowcase = () => {
+		return (
+			<img
+				alt="full band shot"
+				className={styles.banner}
+				src={mobileBanner}
+			></img>
+		);
+	};
+
+	return (
+		<div className={styles.showcase} id="/">
+			{isMobile ? mobileShowcase() : desktopShowcase()}
 		</div>
 	);
 };
+const mapSizesToProps = ({ width }) => ({
+	isMobile: width < 480
+});
 
-export default Showcase;
+export default withSizes(mapSizesToProps)(Showcase);

@@ -9,7 +9,7 @@ const Music = () => {
 			<iframe
 				className={styles.spotify}
 				src="https://open.spotify.com/embed/artist/5ECmcgWxIJ16yXrZ9ZoHe7"
-				frameborder="0"
+				frameBorder="0"
 				allowtransparency="true"
 				allow="encrypted-media"
 				title="oaths"

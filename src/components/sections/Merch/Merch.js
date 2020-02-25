@@ -4,13 +4,17 @@ import styles from './Merch.module.css';
 class Merch extends Component {
 	state = {
 		bigCartelURL: 'https://oaths.bigcartel.com/',
-		merchData: []
+		merchData: [],
+		hasProducts: false
 	};
 
 	componentDidMount() {
 		fetch('https://api.bigcartel.com/oaths/products.json')
 			.then(response => response.json())
 			.then(data => this.setState({ merchData: data }));
+		if (this.state.merchData.length > 0) {
+			this.setState({ hasProducts: true });
+		}
 	}
 
 	render() {
@@ -50,7 +54,11 @@ class Merch extends Component {
 			<div id="merch" className={`${styles.merch} section`}>
 				<h1 className="title">Merch</h1>
 
-				<div className={styles.merchList}>{merch}</div>
+				{this.state.hasProducts ? (
+					<div className={styles.merchList}>{merch}</div>
+				) : (
+					<h2>New Merch Coming Soon</h2>
+				)}
 			</div>
 		);
 	}
