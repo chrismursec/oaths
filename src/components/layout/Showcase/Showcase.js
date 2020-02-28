@@ -7,11 +7,14 @@ import withSizes from 'react-sizes';
 const Showcase = ({ isMobile }) => {
 	const desktopShowcase = () => {
 		return (
-			<img
-				alt="full band shot"
-				className={styles.banner}
-				src={desktopBanner}
-			></img>
+			<div className={styles.container}>
+				<img
+					alt="full band shot"
+					className={styles.banner}
+					src={desktopBanner}
+				></img>
+				{/* <h3 className={styles.tag}>New Single ALONE Out Now</h3> */}
+			</div>
 		);
 	};
 

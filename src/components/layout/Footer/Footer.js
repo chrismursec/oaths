@@ -64,6 +64,7 @@ const Footer = () => {
 				className={styles.fontawesomeicon}
 				target="_blank"
 				rel="noopener noreferrer"
+				alt={footerItem.name}
 			>
 				<FontAwesomeIcon icon={footerItem.icon} />
 			</a>

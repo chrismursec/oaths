@@ -12,7 +12,8 @@ class Merch extends Component {
 		fetch('https://api.bigcartel.com/oaths/products.json')
 			.then(response => response.json())
 			.then(data => this.setState({ merchData: data }));
-		if (this.state.merchData.length > 0) {
+
+		if (this.state.merchData.length < 1) {
 			this.setState({ hasProducts: true });
 		}
 	}
@@ -41,11 +42,14 @@ class Merch extends Component {
 					>
 						<p>{merchItem.name}</p>
 					</a>
-					<p>
-						{merchItem.status === 'sold-out'
-							? 'Sold Out'
-							: 'In Stock'}
-					</p>
+
+					<div className={styles.middle}>
+						<div className={styles.text}>
+							{merchItem.status === 'sold-out'
+								? 'Sold Out'
+								: 'In Stock'}
+						</div>
+					</div>
 				</div>
 			);
 		});
@@ -53,12 +57,13 @@ class Merch extends Component {
 		return (
 			<div id="merch" className={`${styles.merch} section`}>
 				<h1 className="title">Merch</h1>
+				<div className={styles.merchList}>{merch}</div>
 
-				{this.state.hasProducts ? (
+				{/* {this.state.hasProducts ? (
 					<div className={styles.merchList}>{merch}</div>
 				) : (
 					<h2>New Merch Coming Soon</h2>
-				)}
+				)} */}
 			</div>
 		);
 	}

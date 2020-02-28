@@ -14,3 +14,17 @@
 		height: auto;
 	}
 }
+.container {
+	position: relative;
+}
+.tag {
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 1000;
+	background-color: #92ad40;
+	padding: 5px;
+	color: #ffffff;
+	font-weight: bold;
+}

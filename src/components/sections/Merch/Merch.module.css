@@ -2,8 +2,36 @@
 	font-family: 'Alata', sans-serif;
 }
 .merchItemImage {
-	height: 200px;
-	width: 200px;
+	height: auto;
+	width: 25vw;
+
+	opacity: 1;
+
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+.text {
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+}
+.middle {
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.merchContainer:hover img {
+	opacity: 0.3;
+}
+
+.merchContainer:hover .middle {
+	opacity: 1;
 }
 
 .merchList {
@@ -18,6 +46,8 @@
 	display: flex;
 	flex-direction: column;
 	align-self: center;
+	position: relative;
+	width: 50%;
 }
 
 .merchLink {
@@ -34,6 +64,11 @@
 	}
 	.merchContainer {
 		padding-bottom: 1em;
+		width: 100%;
+	}
+	.merchItemImage {
+		width: 40vw;
+		height: auto;
 	}
 }
 @media screen and (max-width: 600px) {
@@ -43,5 +78,9 @@
 	}
 	.merchList {
 		flex-direction: column;
+	}
+	.merchContainer {
+		padding-bottom: 1em;
+		width: 100%;
 	}
 }
