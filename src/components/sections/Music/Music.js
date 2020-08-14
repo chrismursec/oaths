@@ -6,9 +6,19 @@ const Music = () => {
 		<div id="music" className={`${styles.music} section`}>
 			<h1 className="title">MUSIC</h1>
 
+			{/* <iframe
+				className={styles.spotify}
+				src="https://open.spotify.com/embed/artist/5ECmcgWxIJ16yXrZ9ZoHe7"
+				frameBorder="0"
+				allowtransparency="true"
+				allow="encrypted-media"
+				title="oaths"
+			></iframe> */}
 			<iframe
 				className={styles.spotify}
 				src="https://open.spotify.com/embed/artist/5ECmcgWxIJ16yXrZ9ZoHe7"
+				width="300"
+				height="380"
 				frameBorder="0"
 				allowtransparency="true"
 				allow="encrypted-media"

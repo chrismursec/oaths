@@ -8,12 +8,7 @@
 	width: 100vw;
 	height: 80vh;
 }
-
-@media screen and (max-width: 991px) {
-	.banner {
-		height: auto;
-	}
-}
+/* These are added for the tag above the image  */
 .container {
 	position: relative;
 }
@@ -27,4 +22,10 @@
 	padding: 5px;
 	color: #ffffff;
 	font-weight: bold;
+}
+
+@media screen and (max-width: 991px) {
+	.banner {
+		height: auto;
+	}
 }

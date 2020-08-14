@@ -6,6 +6,7 @@
 	align-items: center;
 	background: #111111;
 	position: fixed;
+	z-index: 1000;
 }
 .brand {
 	font-size: 32px;
