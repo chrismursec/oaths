@@ -14,6 +14,7 @@ const Video = () => {
 				allowFullScreen
 			></iframe>
 		</div>
+		
 	);
 };
 
